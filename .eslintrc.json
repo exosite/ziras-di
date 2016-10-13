@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": [
+        "**/test/*.spec.js",
+        "**/test/bootstrap.js",
+        "**/webpack.config.js"
+      ]
+    }]
+  }
+}
