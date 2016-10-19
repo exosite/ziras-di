@@ -16,7 +16,7 @@ Di.global.yourDependency = new YourDependency();
 Di.global.yourDependency = (...args) => new YourDependency(...args);
 ```
 
-Apply a Di instance to your class.
+Apply a Di instance to your class. It applies to both itself and its prototype.
 
 ```js
 import Di from 'sharils-di';
@@ -31,6 +31,12 @@ Use dependency depending on how it's registered.
 import Di from 'sharils-di';
 
 class YourClass {
+    static factory() {
+        this.yourDependency = new this.di.YourDependency();
+        this.yourDependency = this.di.yourDependency;
+        this.yourDependency = this.di.yourDependency();
+    }
+
     constructor() {
         this.yourDependency = new this.di.YourDependency();
         this.yourDependency = this.di.yourDependency;

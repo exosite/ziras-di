@@ -17,19 +17,15 @@ const diProperties = {
   },
 };
 
-const validateTarget = (target) => {
-  const targetOrPrototype = typeof target === 'function' ?
-    target.prototype : target;
-
-  validateObject(targetOrPrototype, TARGET_TYPE_ERROR);
-
-  return targetOrPrototype;
-};
-
 const defineDi = (target, value) => {
-  const targetOrPrototype = validateTarget(target);
+  if (typeof target === 'function') {
+    validateObject(target.prototype, TARGET_TYPE_ERROR);
+    Object.defineProperty(target.prototype, 'di', { value });
+  } else {
+    validateObject(target, TARGET_TYPE_ERROR);
+  }
 
-  Object.defineProperty(targetOrPrototype, 'di', { value });
+  Object.defineProperty(target, 'di', { value });
 
   return target;
 };
