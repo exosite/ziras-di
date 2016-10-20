@@ -147,8 +147,12 @@ describe('Feature: Di', () => {
     });
 
     specify('And Car is a class ' +
+      'And calling engine on itself returns the engine from its di' +
       'And calling engine on its instance returns the engine from its di', () => {
       class Car {
+        static engine() {
+          return this.di.engine();
+        }
         engine() {
           return this.di.engine();
         }
@@ -166,12 +170,17 @@ describe('Feature: Di', () => {
       eg.car.should.be.instanceof(eg.Car);
     });
 
+    specify('And Car.engine is called', () => {
+      eg.returnValue1 = eg.Car.engine();
+    });
+
     specify('When car.engine is called', () => {
-      eg.returnValue = eg.car.engine();
+      eg.returnValue2 = eg.car.engine();
     });
 
     specify('Then the engine is returned', () => {
-      eg.returnValue.should.equal(eg.engine);
+      eg.returnValue1.should.equal(eg.engine);
+      eg.returnValue2.should.equal(eg.engine);
     });
   });
 
