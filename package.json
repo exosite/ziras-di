@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sharils/js-di.git"
+    "url": "git+https://github.com/ziras/ziras-di.git"
   },
-  "author": "sharils@users.noreply.github.com",
+  "author": "ziras@users.noreply.github.com",
   "license": "AGPL-3.0+",
   "bugs": {
-    "url": "https://github.com/sharils/js-di/issues"
+    "url": "https://github.com/ziras/ziras-di/issues"
   },
-  "homepage": "https://github.com/sharils/js-di#readme",
+  "homepage": "https://github.com/ziras/ziras-di#readme",
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
