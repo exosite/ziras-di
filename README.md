@@ -28,7 +28,7 @@ Di.global(YourClass);
 Use dependency depending on how it's registered.
 
 ```js
-import Di from 'sharils-di';
+import Di from '@exosite/ziras-di';
 
 class YourClass {
     static factory() {
