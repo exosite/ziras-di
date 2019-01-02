@@ -1,5 +1,5 @@
 {
-  "name": "ziras-di",
+  "name": "@exosite/ziras-di",
   "version": "1.0.2",
   "description": "Minimal Dependency Injection",
   "main": "src/index.js",
