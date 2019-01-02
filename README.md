@@ -19,7 +19,7 @@ Di.global.yourDependency = (...args) => new YourDependency(...args);
 Apply a Di instance to your class. It applies to both itself and its prototype.
 
 ```js
-import Di from 'sharils-di';
+import Di from '@exosite/ziras-di';
 
 class YourClass {}
 Di.global(YourClass);
