@@ -1,4 +1,4 @@
-sharils-di
+ziras-di
 ==========
 
 Minimal Dependency Injection
