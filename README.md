@@ -105,4 +105,4 @@ npm start
 License
 -------
 
-AGPL-3.0
+MIT

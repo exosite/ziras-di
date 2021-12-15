@@ -1,6 +1,6 @@
 {
   "name": "@exosite/ziras-di",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Minimal Dependency Injection",
   "main": "src/index.js",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ziras/ziras-di.git"
+    "url": "git+https://github.com/exosite/ziras-di.git"
   },
-  "author": "ziras@users.noreply.github.com",
-  "license": "AGPL-3.0+",
+  "author": "Exosite",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ziras/ziras-di/issues"
+    "url": "https://github.com/exosite/ziras-di/issues"
   },
-  "homepage": "https://github.com/ziras/ziras-di#readme",
+  "homepage": "https://github.com/exosite/ziras-di#readme",
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
